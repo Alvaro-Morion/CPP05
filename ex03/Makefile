@@ -6,7 +6,7 @@
 #    By: amorion- <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/19 10:59:54 by amorion-          #+#    #+#              #
-#    Updated: 2022/06/19 11:03:56 by amorion-         ###   ########.fr        #
+#    Updated: 2022/06/19 11:48:00 by amorion-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,6 +15,7 @@ SRCS = Bureaucrat.cpp				\
 	   ShrubberyCreationForm.cpp	\
 	   RobotomyRequestForm.cpp 		\
 	   PresidentialPardonForm.cpp	\
+	   Intern.cpp					\
 	   main.cpp
 OBJS = $(SRCS:.cpp=.o)
 

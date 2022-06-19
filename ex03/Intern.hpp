@@ -1,31 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Intern.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amorion- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/30 10:43:11 by amorion-          #+#    #+#             */
-/*   Updated: 2022/06/11 12:45:29 by amorion-         ###   ########.fr       */
+/*   Created: 2022/06/19 11:15:07 by amorion-          #+#    #+#             */
+/*   Updated: 2022/06/19 12:02:09 by amorion-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Bureaucrat.hpp"
-#include "Form.hpp"
-int main(void)
-{
-	Form F1("Too low", 180, 42);
-	Form F2("Too high", 0, 42);
-	Form F3("Very important form", 50, 42);
-	Bureaucrat B1("John", 100);
-	Bureaucrat B2("Dan", 40);
+#ifndef INTERN_HPP
+# define INTERN_HPP
+# include <iostream>
+# include "Form.hpp"
+# include "ShrubberyCreationForm.hpp"
+# include "RobotomyRequestForm.hpp"
+# include "PresidentialPardonForm.hpp"
 
-	std::cout << F3 << std::endl;
-	B1.signForm(F3);
-	std::cout << F3 << std::endl;
-	B2.signForm(F3);
-	std::cout << F3 << std::endl;
-	B1.signForm(F3);
+class Intern{
+	public:
+		Intern();
+		Intern(Intern const &src);
 
-	return(0);
-}
+		~Intern();
+
+		Intern const &operator=(Intern const &rhs);
+
+		Form	*makeForm(std::string const type, std::string const target);
+};
+#endif
