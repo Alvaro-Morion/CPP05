@@ -6,7 +6,7 @@
 /*   By: amorion- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/30 10:43:11 by amorion-          #+#    #+#             */
-/*   Updated: 2022/06/11 12:45:29 by amorion-         ###   ########.fr       */
+/*   Updated: 2022/08/02 17:00:26 by amorion-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,5 @@ int main(void)
 	std::cout << F3 << std::endl;
 	B2.signForm(F3);
 	std::cout << F3 << std::endl;
-	B1.signForm(F3);
-
 	return(0);
 }

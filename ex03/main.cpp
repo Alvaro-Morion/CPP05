@@ -6,15 +6,21 @@
 /*   By: amorion- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/30 10:43:11 by amorion-          #+#    #+#             */
-/*   Updated: 2022/06/19 12:02:13 by amorion-         ###   ########.fr       */
+/*   Updated: 2022/08/02 17:23:51 by amorion-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Bureaucrat.hpp"
 #include "Form.hpp"
 #include "Intern.hpp"
+void ft_leaks(void)
+{
+	system("leaks a.out");
+}
+
 int main(void)
 {
+	//atexit(ft_leaks);
 	Bureaucrat B3("Zafod Beeblebrox", 1);
 	Intern I;
 	Form *F1 = I.makeForm("Shrubbery Creation", "home");
@@ -31,9 +37,14 @@ int main(void)
 	std::cout << *F3 << std::endl;
 	B3.signForm(*F3);
 	B3.executeForm(*F3);
-	std::cout << *F4 << std::endl;
-	B3.signForm(*F4);
-	B3.executeForm(*F4);
+	if(F4)
+	{	
+		std::cout << *F4 << std::endl;
+		B3.signForm(*F4);
+		B3.executeForm(*F4);
+	}
+	else
+		std::cout << "F4 does not exist" << std::endl;
 
 	delete F1;
 	delete F2;

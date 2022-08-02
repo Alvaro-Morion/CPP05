@@ -6,7 +6,7 @@
 /*   By: amorion- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/30 10:43:11 by amorion-          #+#    #+#             */
-/*   Updated: 2022/04/30 11:21:40 by amorion-         ###   ########.fr       */
+/*   Updated: 2022/08/02 16:39:57 by amorion-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ int main(void)
 		Bureaucrat B2("Pepe", 1);
 		Bureaucrat B3("Pepe", 150);
 		Bureaucrat B4("Bueno", 45);
+
+		std::cout << "gradde changes\n";
 		B2.incrementGrade();
 		B3.decrementGrade();
 		std::cout << B4 << std::endl;

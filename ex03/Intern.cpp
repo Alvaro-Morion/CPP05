@@ -6,7 +6,7 @@
 /*   By: amorion- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/19 11:15:16 by amorion-          #+#    #+#             */
-/*   Updated: 2022/06/19 12:02:11 by amorion-         ###   ########.fr       */
+/*   Updated: 2022/08/02 17:19:04 by amorion-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ Form *Intern::makeForm(std::string const type, std::string const target)
 		default :
 		{
 			std::cout << "Unknown form type\n";
-			return(new Form);
+			return(0);
 		}
 	}
 }

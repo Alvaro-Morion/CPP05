@@ -6,7 +6,7 @@
 /*   By: amorion- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/30 11:24:19 by amorion-          #+#    #+#             */
-/*   Updated: 2022/06/19 10:00:56 by amorion-         ###   ########.fr       */
+/*   Updated: 2022/08/02 17:08:08 by amorion-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ class Form{
 		int			getXgrade() const;
 
 		void beSigned(Bureaucrat &Bur);
-		virtual void execute(Bureaucrat const & executor) const;
+		virtual void execute(Bureaucrat const & executor) const = 0;
 
 		class   GradeTooHighException : public std::exception{
             public:

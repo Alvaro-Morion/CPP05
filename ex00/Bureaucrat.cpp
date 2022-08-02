@@ -6,7 +6,7 @@
 /*   By: amorion- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/30 10:18:07 by amorion-          #+#    #+#             */
-/*   Updated: 2022/04/30 11:16:17 by amorion-         ###   ########.fr       */
+/*   Updated: 2022/08/02 16:37:12 by amorion-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,7 +75,7 @@ void	Bureaucrat::incrementGrade(void)
 		if(current <= 1)
 			throw GradeTooHighException();
 		else
-		grade--;
+			grade--;
 	}
 	catch (std::exception &exception){};
 }
